@@ -8,17 +8,18 @@ function App() {
         <footer>
           codded by {" "}
         <a
-          href="https://pl.linkedin.com/in/maria-kozielska-5018751bbreactjs.org"
+          href="https://www.linkedin.com/in/maria-kozielska-5018751bb"
           target="_blank"
           rel="noreferrer"
         > 
-        misia
-        </a>
-          open source on github
+        misia 
+        </a>{" "}
+          open source on {" "}
           <a 
           href= "https://github.com/misshia/my-app-weather"
           target="_blank"
           rel="noreferrer">
+            github
         </a>
       </footer>
     </div>
