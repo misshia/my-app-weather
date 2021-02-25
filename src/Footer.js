@@ -9,8 +9,9 @@ export default function Footer () {
           href="https://www.linkedin.com/in/maria-kozielska-5018751bb"
           target="_blank"
           rel="noreferrer"
-        > Maria Misia kozielska
+        > Maria Misia Kozielska
         </a>{" "}
+        <br />
           open source on {" "}
           <a 
           href= "https://github.com/misshia/my-app-weather"
