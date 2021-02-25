@@ -9,6 +9,7 @@ export default function Footer () {
           href="https://www.linkedin.com/in/maria-kozielska-5018751bb"
           target="_blank"
           rel="noreferrer"
+          className= "link-dark"
         > Maria Misia Kozielska
         </a>{" "}
         <br />
@@ -16,7 +17,9 @@ export default function Footer () {
           <a 
           href= "https://github.com/misshia/my-app-weather"
           target="_blank"
-          rel="noreferrer">
+          rel="noreferrer"
+          className= "link-dark"
+          >
             github
         </a>
       </footer>
