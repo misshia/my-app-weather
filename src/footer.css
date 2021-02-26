@@ -2,6 +2,11 @@
     color: pink;
 }
 
+.link-dark:hover {
+    color:rosybrown;
+    text-decoration: dotted;
+}
+
 footer {
     color:pink;
     text-align: center;
