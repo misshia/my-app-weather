@@ -35,11 +35,10 @@ button {
 button:hover {
   background-color: #6a6a82;
   flex-basis: 50px;
-  height: 80px;
-  margin: 0px;;
+  margin: 0px;
 }
 
-h4 .current-temperature {
+.current-temperature {
   font-size: 75px;
   color: #6a6a82;
   flex-basis: 50px;
