@@ -14,7 +14,7 @@ export default function Weather () {
 
       <div className="temp">
             <div className= "element">
-            <p><span id ="current-temperature">18</span>°</p>
+            <p><span id ="current-temperature">18°</span></p>
             <div className="btn-group-vertical">
               <div className="buttonC" id="celsius" click="convertToCelsius()" >
                 C
