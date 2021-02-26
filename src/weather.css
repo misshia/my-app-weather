@@ -39,7 +39,7 @@ button:hover {
   margin: 0px;;
 }
 
-h4 span .current-temperature {
+h4 .current-temperature {
   font-size: 75px;
   color: #6a6a82;
   flex-basis: 50px;
