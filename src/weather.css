@@ -1,13 +1,17 @@
 
-.weather h1 #city-outcome {
+h1 {
   font-weight: 900;
   font-size: 55px;
-  text-align: left;
-  color: #6a6a82;
 }
 
 h2 {
-  font-size: 20px;
+  font-size: 10px;
+}
+
+h1, h2 {
+  text-align: left;
+  margin-left: 40px;
+  margin-top: 40px;
 }
 
 img {
