@@ -10,8 +10,11 @@ export default function Weather () {
     setWeatherData({
       temperature: response.data.main.temp,
       humidity: response.data.main.humidity,
+      description: response.data.main.description,
       wind: response.data.wind.speed,
-      city: response.data.name
+      city: response.data.name,
+      icon: `images/{response.data.main.weather[0].icon}.png`,
+
     })
 
     setReady(true);
@@ -43,7 +46,7 @@ export default function Weather () {
           </div>
         </div>
     
-        <img src="./images/13d.png" id="icon" alt="cat weather"/>
+        <img src={weatherData.icon} class="card-img-top" id="icon" alt="{weatherData.description}"/>
 
 
         <ul>
