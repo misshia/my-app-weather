@@ -1,5 +1,6 @@
 .App {
   text-align: center;
+  margin: 20px;
   
 }
 
@@ -29,7 +30,6 @@
       );
     background-size: 21px 21px;
     font-family: monospace;
-    text-align: center;
   }
 
   .container {
@@ -88,6 +88,7 @@
     border: thick dotted rosybrown;
     border-radius: 50px;
     max-width: 600px !important;
+    min-width: 530px;
     color: #6a6a82;
     
 }

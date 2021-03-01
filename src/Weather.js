@@ -43,6 +43,7 @@ export default function Weather () {
             className="form-control"
             type="text"
             placeholder="Search for a city"
+            autoFocus="on"
           />
           
           <button type="submit" className="btn btn-outline-dark" value="search">Search</button>
