@@ -8,8 +8,9 @@ export default function Weather () {
   function handleResponse(response) {
     console.log(response.data);
     setWeatherData({
-      tempetature: response.data.main.temp,
-      wind: 12,
+      temperature: response.data.main.temp,
+      humidity: response.data.main.humidity,
+      wind: response.data.wind.speed,
       city: response.data.name
     })
 
@@ -30,7 +31,7 @@ export default function Weather () {
 
     <div className="temp">
           <div className= "element">
-          <p><span id ="current-temperature">{Math.round(temperature)}°</span></p>
+          <p><span id ="current-temperature">{Math.round(weatherData.temperature)}°</span></p>
           <div className="btn-group-vertical">
             <div className="buttonC" id="celsius" click="convertToCelsius()" >
               C
@@ -47,8 +48,8 @@ export default function Weather () {
 
         <ul>
             <li> Precipitation:<span id="precip"> 0 </span> % </li>
-            <li> Humidity:<span id="humidity"> 77 </span> % </li> 
-            <li> Wind: <span id="wind"> 8 </span> km/h </li>
+            <li> Humidity:<span id="humidity"> {weatherData.humidity} </span> % </li> 
+            <li> Wind: <span id="wind"> {weatherData.wind} </span> km/h </li>
           </ul>  
       
       <form id ="Search-form">
