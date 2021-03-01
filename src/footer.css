@@ -1,9 +1,9 @@
 .link-dark {
-    color: pink;
+    color: rosybrown;
 }
 
 .link-dark:hover {
-    color:rosybrown;
+    color:#6a6a82;
     text-decoration: none;
 }
 
