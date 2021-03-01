@@ -10,10 +10,11 @@ export default function Weather () {
     setWeatherData({
       temperature: response.data.main.temp,
       humidity: response.data.main.humidity,
-      description: response.data.main.description,
+      description: response.data.weather[0].description,
       wind: response.data.wind.speed,
       city: response.data.name,
-      icon: `images/{response.data.main.weather[0].icon}.png`,
+      icon: response.data.weather[0].icon,
+      date: "Friday 17:00",
 
     })
 
@@ -26,8 +27,8 @@ export default function Weather () {
         
       <div className="container">
           
-          <h1 id= "city-outcome"> {weatherData.city} </h1>
-          <h2>Last updated: <span id="date"></span></h2>
+          <h1 id= "city-outcome" className="text-capitalize"> {weatherData.city} </h1>
+          <h2>Last updated: {weatherData.date}</h2>
           <h3 id= "description">{weatherData.description}</h3>
     
 
@@ -46,7 +47,7 @@ export default function Weather () {
           </div>
         </div>
     
-        <img src={weatherData.icon} class="card-img-top" id="icon" alt="{weatherData.description}"/>
+        <img src= "images/13n.png" className="card-img-top" id="icon" alt={weatherData.description}/>
 
 
         <ul>
