@@ -53,7 +53,7 @@ export default function Weather () {
         <ul>
             <li> Precipitation:<span id="precip"> 0 </span> % </li>
             <li> Humidity:<span id="humidity"> {weatherData.humidity} </span> % </li> 
-            <li> Wind: <span id="wind"> {weatherData.wind} </span> km/h </li>
+            <li> Wind: <span id="wind"> {Math.round(weatherData.wind)} </span> km/h </li>
           </ul>  
       
       <form id ="Search-form">
