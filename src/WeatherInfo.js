@@ -1,6 +1,6 @@
 import React from "react";
 import FormattedDate from "./FormattedDate";
-
+import WeatherTemperature from "./WeatherTemperature";
 
 export default function WeatherInfo (props) {
     return (
@@ -12,21 +12,13 @@ export default function WeatherInfo (props) {
 
 
     <div className="temp">
-          <div className= "element">
-          <p><span id ="current-temperature">{Math.round(props.data.temperature)}°</span></p>
-          <div className="btn-group-vertical">
-            <div className="buttonC" id="celsius" click="convertToCelsius()" >
-              C
-              </div>      
-              <div className="buttonF" id="fahrenheit" click="convertToFahrenheit()">
-                F
-                </div>
-              </div>
-          </div>
+          
+          <WeatherTemperature celsius={props.data.temperature}/>
+
         </div>
     
         
-        <img src= {props.data.iconUrl} className="card-img-top" id="icon" alt={props.data.description}/>
+        <img src= {props.data.iconUrl}  id="icon" alt={props.data.description}/>
 
 
         <ul>

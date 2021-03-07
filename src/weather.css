@@ -21,8 +21,8 @@ h1, h2, h3 {
 img {
   width: 300px !important;
   display: block;
-  margin-left: 30px !important;
-  margin-top: -80px !important;
+  margin-left: 30px ;
+  margin-top: -80px;
 }
 
 .input-group {
@@ -123,7 +123,7 @@ li {
   width: 100px;
   background: none;
   display: block;
-  margin: 0 auto !important;
+  margin: 0 auto;
 }
 .weather-forecast-temperature {
   font-size: 32px;
