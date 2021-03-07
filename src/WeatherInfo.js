@@ -17,9 +17,7 @@ export default function WeatherInfo (props) {
 
         </div>
     
-        
         <img src= {props.data.iconUrl}  id="icon" alt={props.data.description}/>
-
 
         <ul>
             <li> Precipitation:<span id="precip"> 0 </span> % </li>

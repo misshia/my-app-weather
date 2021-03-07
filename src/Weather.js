@@ -2,6 +2,7 @@ import React, {useState} from "react";
 import "./weather.css";
 import axios from "axios";
 import WeatherInfo from "./WeatherInfo";
+import WeatherForecast from "./WeatherForecast";
 
 export default function Weather (props) {
   const [weatherData, setWeatherData] = useState({ ready: false });
@@ -21,11 +22,7 @@ export default function Weather (props) {
     });
   }
 
-function  search() {
-  const apiKey = "78251f458f96a759bc4e7e717b3145fb";
-  let apiUrl = `https://api.openweathermap.org/data/2.5/weather?q=${city}&appid=${apiKey}&units=metric`;
-  axios.get(apiUrl).then(handleResponse);
-}
+
 
 function handleSubmit (event) {
   event.preventDefault();
@@ -35,6 +32,12 @@ function handleSubmit (event) {
 function handleCityChange (event) {
   setCity(event.target.value);
 
+}
+
+function  search() {
+  const apiKey = "78251f458f96a759bc4e7e717b3145fb";
+  let apiUrl = `https://api.openweathermap.org/data/2.5/weather?q=${city}&appid=${apiKey}&units=metric`;
+  axios.get(apiUrl).then(handleResponse);
 }
 
   if (weatherData.ready) {
@@ -57,9 +60,11 @@ function handleCityChange (event) {
         <button type="submit" className="btn btn-outline-dark" value="search">Search</button>
         <button type="submit" className="btn btn-outline-dark" value="search" id="current-button">Current</button>
 
-      
     </div>
     </form>
+    
+    <WeatherForecast city={weatherData.city}/>
+      
       </div>
   );
 
