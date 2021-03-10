@@ -63,7 +63,7 @@ function  search() {
     </div>
     </form>
     
-    <WeatherForecast city={weatherData.city}/>
+    <WeatherForecast city={weatherData.city} icon={weatherData.iconUrl}/>
       
       </div>
   );

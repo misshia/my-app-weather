@@ -1,6 +1,7 @@
 import React, { useState } from "react";
 import axios from "axios";
 import "./WeatherForecast.css";
+import WeatherForecastPreview from "./WeatherForecastPreview";
 
 export default function WeatherForecast(props) {
     const [loaded, setLoaded] = useState (false);
@@ -9,18 +10,20 @@ export default function WeatherForecast(props) {
     function handleForcastResponse(response) {
         setForecast(response.data);
         setLoaded(true);
+  
 
     }
 
     if (loaded) {
         return (
-                <div className="WeatherForecast">
-                <div className="card">
-                <div className="card-body"> 
-                 <h5 className="card-title">{Math.round(forecast.list[0].main.temp)}°C</h5>
-                 10:00
-                 </div> 
-                 </div>
+                <div className= "card-deck" >
+                <WeatherForecastPreview data={forecast.list[0]} />
+                <WeatherForecastPreview data={forecast.list[1]} />
+                <WeatherForecastPreview data={forecast.list[2]} />
+                <WeatherForecastPreview data={forecast.list[3]} />
+                <WeatherForecastPreview data={forecast.list[4]} />
+                <WeatherForecastPreview data={forecast.list[5]} />
+
                  </div> 
         )
     } else {
