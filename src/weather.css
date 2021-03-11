@@ -44,8 +44,8 @@ button {
 
 button:hover {
   background-color: #6a6a82;
-  flex-basis: 50px;
   margin: 0px;
+  flex-basis: 50px;
 }
 
 p {
