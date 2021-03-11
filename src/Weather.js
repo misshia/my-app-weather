@@ -40,14 +40,6 @@ function  search() {
   axios.get(apiUrl).then(handleResponse);
 }
 
-function searchLocation(position) {
-  let lat = position.coords.latitude;
-  let lon = position.coords.longitude;
-  let apiKey = "78251f458f96a759bc4e7e717b3145fb";
-  let apiUrl = `https://api.openweathermap.org/data/2.5/weather?lat=${lat}&lon=${lon}&units=metric`;
-  axios.get(`${apiUrl}&appid=${apiKey}`).then(handleResponse);
-  
- }
 
   if (weatherData.ready) {
     return (
