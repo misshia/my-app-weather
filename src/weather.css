@@ -116,12 +116,6 @@ li {
   font-size: 20px;
 }
 
-.card-img-top {
-  width: 100px;
-  background: none;
-  display: block;
-  margin: 0 auto;
-}
 .weather-forecast-temperature {
   font-size: 32px;
   text-overflow: ellipsis;
