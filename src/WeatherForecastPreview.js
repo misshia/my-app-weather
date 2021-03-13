@@ -14,7 +14,7 @@ function temperature() {
 }
 
     return (
-    <div className="card border-0  bg-transparent">
+    <div className="card border-0  bg-transparent d-inline-block">
         <img src= {`./images/${props.data.weather[0].icon}.png`}  id="icon" alt={props.data.weather[0].description} className="card-img-top" />
 
            <h5 className="card-title">{temperature()}</h5>
