@@ -1,6 +1,5 @@
 .card-deck,
 .WeatherForecast {
-  display: block;
+  display: inline-block;
   background: none;
-  border: none;
 }

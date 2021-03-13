@@ -1,7 +1,6 @@
 .card {
   text-align: center;
   background: none;
-  border: none;
 }
 .card-title {
   font-size: 30px;
@@ -14,8 +13,4 @@
   border: none;
   display: block;
   margin: 0 auto;
-}
-
-.card-body {
-  border: none;
 }
