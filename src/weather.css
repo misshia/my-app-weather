@@ -105,20 +105,3 @@ li {
   display: list-item;
   text-align: -webkit-match-parent;
 }
-
-.card {
-  text-align: center;
-  background: none;
-  border: none;
-}
-.card-title {
-  font-size: 30px;
-  font-size: 20px;
-}
-
-.weather-forecast-temperature {
-  font-size: 32px;
-  text-overflow: ellipsis;
-
-  white-space: nowrap;
-}
