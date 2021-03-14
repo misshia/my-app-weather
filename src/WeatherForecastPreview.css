@@ -1,11 +1,30 @@
 .card {
-  text-align: center;
+  margin: 0 auto; /* Added */
+  float: none; /* Added */
+  margin-bottom: 10px; /* Added */
 }
 .card-title {
   font-size: 30px;
   font-size: 20px;
 }
-.card-img-top {
-  width: 80%;
-  display: block;
+
+.weather-forecast-temperature {
+  font-size: 32px;
+  text-overflow: ellipsis;
+
+  white-space: nowrap;
+}
+
+.card-title {
+  font-size: 30px;
+  font-size: 20px;
+  border: none;
+}
+.icon-forcast .card-img-top {
+  width: 100%;
+  display: inline-flex;
+}
+
+.card-body {
+  border: none;
 }

@@ -17,7 +17,7 @@ export default function WeatherInfo (props) {
 
         </div>
     
-        <img src= {props.data.iconUrl}  id="icon" alt={props.data.description}/>
+        <img className=".ml-30" src= {props.data.iconUrl}  id="icon" alt={props.data.description}/>
 
 
         <ul>
