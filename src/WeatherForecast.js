@@ -16,7 +16,7 @@ export default function WeatherForecast(props) {
 
     if (loaded && props.city === forecast.city.name) {
         return (
-                <div className= "card-deck " >
+                <div className= "card-deck d-inline-block" >
                 <WeatherForecastPreview data={forecast.list[0]} />
                 <WeatherForecastPreview data={forecast.list[1]} />
                 <WeatherForecastPreview data={forecast.list[2]} />
