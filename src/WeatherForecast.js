@@ -16,6 +16,9 @@ export default function WeatherForecast(props) {
 
     if (loaded && props.city === forecast.city.name) {
         return (
+                
+                <div class="containerForecast"> 
+                 <div class="row">
                 <div className= "card-deck " >
                 <WeatherForecastPreview data={forecast.list[0]} />
                 <WeatherForecastPreview data={forecast.list[1]} />
@@ -23,8 +26,9 @@ export default function WeatherForecast(props) {
                 <WeatherForecastPreview data={forecast.list[3]} />
                 <WeatherForecastPreview data={forecast.list[4]} />
                 <WeatherForecastPreview data={forecast.list[5]} />
-
-                 </div> 
+                </div>
+                </div>
+                </div> 
         )
     } else {
     let apiKey = "78251f458f96a759bc4e7e717b3145fb";

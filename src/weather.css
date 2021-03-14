@@ -104,3 +104,8 @@ li {
   display: list-item;
   text-align: -webkit-match-parent;
 }
+
+.weatherInfo {
+  display: block;
+  margin: 0 auto;
+}

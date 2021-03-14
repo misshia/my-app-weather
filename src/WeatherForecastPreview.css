@@ -22,7 +22,8 @@
 }
 .icon-forcast .card-img-top {
   width: 100%;
-  display: inline-flex;
+  display: block;
+  margin: 0 auto;
 }
 
 .card-body {
