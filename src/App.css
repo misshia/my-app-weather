@@ -86,4 +86,5 @@ body {
   border: thick dotted rosybrown;
   border-radius: 50px;
   color: #6a6a82;
+  min-width: 570px;
 }
