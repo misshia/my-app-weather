@@ -19,7 +19,7 @@ export default function WeatherForecast(props) {
                 
                 <div className="containerForecast"> 
                  <div className="row">
-                <div className= "card-deck row row-cols-3 row-cols-md-2" >
+                <div className= "card-deck row row-cols-3 row-cols-md-2  ">
                 <WeatherForecastPreview data={forecast.list[0]} className="col mb-6"/>
                 <WeatherForecastPreview data={forecast.list[1]} className="col mb-6"/>
                 <WeatherForecastPreview data={forecast.list[2]} className="col mb-6"/>

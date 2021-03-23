@@ -1,19 +1,16 @@
 import React from "react";
 import './App.css';
 import Footer from "./Footer";
-import Weather from "./Weather"
+import Weather from "./Weather";
 
 export default function App() {
+
   return <div className="App">
     <div>
-       
-        <Weather defaultCity="Warsaw" />
-
-    </div>
-
-        <Footer />
-
-         </div>;
+      <Weather defaultCity="Warsaw" />
+      </div>
+      <Footer />
+      </div>;
 }
 
 
