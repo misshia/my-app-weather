@@ -10,8 +10,8 @@ export default function WeatherInfo (props) {
           <h3 id= "description" className="text-capitalize">{props.data.description}</h3>
     
 
-
-    <div className="temp">
+<div id="main" >
+    <div className="temp float-right">
           
           <WeatherTemperature celsius={props.data.temperature}/>
 
@@ -19,12 +19,14 @@ export default function WeatherInfo (props) {
     
         <img className=".ml-30" src= {props.data.iconUrl}  id="icon" alt={props.data.description}/>
 
-
+<div className="float-right">
         <ul>
             <li> Precipitation:<span id="precip"> 0 </span> % </li>
             <li> Humidity:<span id="humidity"> {props.data.humidity} </span> % </li> 
             <li> Wind: <span id="wind"> {Math.round(props.data.wind)} </span> km/h </li>
           </ul> 
+          </div>
+          </div>
           </div>
     );
 }
